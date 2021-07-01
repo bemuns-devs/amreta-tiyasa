@@ -1,0 +1,65 @@
+.single-thumbnail {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.single-content {
+  overflow: hidden;
+  line-height: 160%;
+  font-weight: $font-weight-light;
+  word-wrap: break-word;
+  img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: $font-weight-bold;
+  }
+  ul {
+    list-style: square;
+  }
+  a {
+    text-decoration: none;
+    font-weight: $font-weight-bold;
+  }
+  figcaption {
+    font-size: 14px;
+    color: $secondary;
+  }
+  blockquote {
+    padding-left: 5%;
+    border-left: 4px solid $dark;
+    p {
+      font-size: 16px;
+      font-weight: $font-weight-semibold;
+      font-style: italic;
+    }
+    cite {
+      color: $secondary;
+      &::before {
+        content: "—";
+        margin-right: 0.25rem;
+      }
+    }
+  }
+  iframe {
+    max-width: 100% !important;
+  }
+}
+@include media-breakpoint-up(md) {
+  .single-content {
+    blockquote {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+#particles-js {
+  z-index: -1;
+}
+#hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@include media-breakpoint-down(sm) {
+  #hero {
+    background-position: 50% center;
+  }
+}
+
+.h-bg {
+  font-size: 3em;
+  color: $light;
+  z-index: -1;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+  -webkit-transform: translateY(0) scale(1);
+  transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s,
+    opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+}
+
+@include media-breakpoint-up(md) {
+  .h-bg {
+    font-size: 6em;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .h-bg {
+    font-size: 10em;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .h-bg {
+    font-size: 14em;
+  }
+}
+
+.platform-item {
+  box-shadow: 0px 0px 35px rgb(0 0 0 / 10%);
+  min-height: 300px;
+  padding: 2.25rem;
+}

@@ -1,0 +1,48 @@
+.widget {
+  * {
+    line-height: 160%;
+  }
+  a {
+    color: $black;
+    text-decoration: none;
+  }
+  ul {
+    list-style-type: square;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .tagcloud {
+    .tag-cloud-link {
+      display: inline-block;
+      color: $white;
+      background-color: $black;
+      padding: 0.5rem;
+      letter-spacing: 0.75px;
+      margin-bottom: 0.35rem;
+    }
+  }
+  &.widget_archive {
+    .screen-reader-text {
+      display: none;
+    }
+  }
+  select {
+    // A reset of styles, including removing the default dropdown arrow
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    // Additional resets for further consistency
+    border: none;
+    outline: none;
+    // Custom
+    color: $white;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: $dark;
+  }
+}

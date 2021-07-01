@@ -1,0 +1,66 @@
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 2px; /* remove scrollbar space /*/
+  background: transparent; // optional: just make scrollbar invisible
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: $black;
+}
+::-moz-selection {
+  background: $black;
+  color: $white;
+}
+::selection {
+  background: $black;
+  color: $white;
+}
+// Classes
+.fs-18 {
+  font-size: 18px;
+}
+.fs-7 {
+  font-size: 14px;
+}
+.fs-responsive {
+  font-size: 14px;
+}
+.small-responsive {
+  font-size: 12px;
+}
+@media (min-width: 375.98px) {
+  .fs-responsive {
+    font-size: 16px;
+  }
+  .small-responsive {
+    font-size: 14px;
+  }
+}
+.fw-semibold {
+  font-weight: $font-weight-semibold;
+}
+.ls-half {
+  letter-spacing: 0.5px;
+}
+// Image
+.img-cover {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+// Background
+.bg-gradient-bem {
+  background: linear-gradient(
+    90deg,
+    rgba(75, 250, 215, 0.75) 0%,
+    rgba(28, 194, 255, 0.75) 100%
+  );
+}
+// Anchor
+.link-fwb-primary a {
+  text-decoration: none;
+  font-weight: $font-weight-bold;
+}
