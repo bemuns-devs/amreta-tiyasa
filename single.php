@@ -20,11 +20,6 @@ get_header();
 			<figure class="figure w-100">
 				<img src="<?= esc_url(the_post_thumbnail_url()) ?>" alt="<?= esc_attr(get_the_title()) ?>"
 					class="figure-img single-thumbnail">
-				<?php if(the_post_thumbnail_caption()): ?>
-				<figcaption class="figure-caption small-responsive text-secondary link-fwb-primary">
-					<?php the_post_thumbnail_caption() ?>
-				</figcaption>
-				<?php endif; ?>
 			</figure>
 			<?php endif; ?>
 			<?php 
