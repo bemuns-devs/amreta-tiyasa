@@ -27,7 +27,7 @@
                     <li>
                         <a href="<?= esc_url(get_theme_mod('url_link_narahubung_'.$i)) ?>"
                             title="<?= esc_attr(get_theme_mod('label_link_narahubung_'.$i)) ?>"
-                            class="text-white text-decoration-none">
+                            class="text-white text-decoration-none" target="_blank" rel="noopener noreferrer">
                             <?= get_theme_mod('label_link_narahubung_'.$i) ?>
                         </a>
                     </li>
