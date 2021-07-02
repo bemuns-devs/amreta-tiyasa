@@ -13,21 +13,6 @@
     width: 100%;
     height: auto;
   }
-  .tagcloud {
-    .tag-cloud-link {
-      display: inline-block;
-      color: $white;
-      background-color: $black;
-      padding: 0.5rem;
-      letter-spacing: 0.75px;
-      margin-bottom: 0.35rem;
-    }
-  }
-  &.widget_archive {
-    .screen-reader-text {
-      display: none;
-    }
-  }
   select {
     // A reset of styles, including removing the default dropdown arrow
     -webkit-appearance: none;
@@ -44,5 +29,36 @@
     cursor: pointer;
     line-height: 1.1;
     background-color: $dark;
+  }
+  input[type="submit"],
+  button {
+    outline: 0;
+    background-color: $dark;
+    color: $white;
+    padding: 0.5rem 0.75rem;
+    border: none;
+  }
+  input {
+    width: 100%;
+    display: block;
+    color: $secondary;
+    padding: 0.25rem 0.75rem;
+    border: 2px solid $dark;
+    border-radius: 4px;
+  }
+  .tagcloud {
+    .tag-cloud-link {
+      display: inline-block;
+      color: $white;
+      background-color: $black;
+      padding: 0.5rem;
+      letter-spacing: 0.75px;
+      margin-bottom: 0.35rem;
+    }
+  }
+  &.widget_archive {
+    .screen-reader-text {
+      display: none;
+    }
   }
 }

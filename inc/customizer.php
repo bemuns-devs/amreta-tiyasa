@@ -268,6 +268,23 @@ function wp_bemuns_customize_register( $wp_customize ) {
 		'type' => 'url',
 		'section' => 'section_video',
 	));
+
+	// Gambar Video
+	$wp_customize -> add_setting('gambar_video', array(
+		'type' => 'theme_mod',
+		'sanitize_callback' => 'wp_bemuns_sanitize_image'
+	));
+
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'gambar_video', array(
+		'label' => 'Thumbnail Video',
+		'section' => 'section_video',
+		'settings' => 'gambar_video',
+		'button_labels' => array(// All These labels are optional
+					'select' => 'Unggah Gambar',
+					'remove' => 'Hapus Gambar',
+					'change' => 'Ganti Gambar',
+					)
+	)));
 	
 	// Informasi
 	$wp_customize -> add_section('section_informasi', array(

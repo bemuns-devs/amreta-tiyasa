@@ -15,7 +15,8 @@
                 <li class="carousel-item <?= ($i == 1) ? 'active' : '' ; $i++ ?>">
                     <a href="<?= esc_url(the_permalink()) ?>" class="fs-responsive text-decoration-none text-body"
                         title="<?= esc_attr(the_title()) ?>">
-                        <?= wp_trim_words(get_the_title(), 6) ?>
+                        <?php $judul_pos = wp_trim_words(get_the_title(), 6); ?>
+                        <?= $judul_pos ?>
                     </a>
                 </li>
                 <?php endwhile; ?>
@@ -24,7 +25,8 @@
         </div>
         <?php if(get_theme_mod('url_link_informasi')): ?>
         <a href="<?= get_theme_mod('url_link_informasi') ?>"
-            class="fs-responsive btn border-2 border-dark text-dark fw-semibold ms-auto">
+            class="fs-responsive btn border-2 border-dark text-dark fw-semibold ms-auto"
+            title="<?= esc_attr(get_theme_mod('label_link_informasi')) ?>">
             <?= get_theme_mod('label_link_informasi') ?>
         </a>
         <?php endif; ?>

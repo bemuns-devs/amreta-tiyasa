@@ -2,15 +2,17 @@
 .widget-title {
   width: 100%;
   overflow: hidden;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: -webkit-max-content 1fr;
+  grid-template-columns: max-content 1fr;
+  justify-items: stretch;
   align-items: center;
+  -moz-column-gap: 10%;
+  column-gap: 10%;
   position: relative;
   &::after {
     content: "";
     display: block;
-    margin-left: 10%;
-    width: 100%;
     height: 4px;
     background: $dark;
   }
@@ -45,5 +47,5 @@
 }
 
 .posts-thumbnail-wrapper {
-  background-color: $light;
+  background-color: $dark;
 }

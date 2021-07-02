@@ -23,10 +23,5 @@
 
 <body <?php body_class(); ?>>
 	<?php 
-	
 	wp_body_open();
-	if (is_front_page()) {
-		get_template_part('front-page-nav');
-	} else {
-		get_template_part('nav');
-	}
+	get_template_part('nav');

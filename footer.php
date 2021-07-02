@@ -26,6 +26,7 @@
                     <?php for($i = 1;$i <= get_theme_mod('jumlah_narahubung');$i++): ?>
                     <li>
                         <a href="<?= esc_url(get_theme_mod('url_link_narahubung_'.$i)) ?>"
+                            title="<?= esc_attr(get_theme_mod('label_link_narahubung_'.$i)) ?>"
                             class="text-white text-decoration-none">
                             <?= get_theme_mod('label_link_narahubung_'.$i) ?>
                         </a>
@@ -38,7 +39,8 @@
                 <ul class="list-unstyled d-flex">
                     <?php for($i = 1;$i <= get_theme_mod('jumlah_medsos'); $i++): ?>
                     <li>
-                        <a href="<?= get_theme_mod('url_link_medsos_'.$i) ?>" class="text-white fs-4 fw-light me-3">
+                        <a href="<?= get_theme_mod('url_link_medsos_'.$i) ?>" class="text-white fs-4 fw-light me-3"
+                            title="<?= ucfirst(esc_attr(get_theme_mod('nama_medsos_'.$i))) ?>">
                             <i class="fab fa-<?= esc_attr(get_theme_mod('nama_medsos_'.$i)) ?>"></i>
                         </a>
                     </li>
