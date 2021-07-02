@@ -1,11 +1,11 @@
 #primaryNavbar {
   transition: all 200ms;
 }
-// #primaryNavbar.bg-transparent {
-//   #navbarBrandImage {
-//     visibility: hidden;
-//   }
-// }
+#primaryNavbar.bg-transparent {
+  #navbarBrandImage {
+    visibility: hidden;
+  }
+}
 #navbarBrandImage {
   height: 48px;
 }

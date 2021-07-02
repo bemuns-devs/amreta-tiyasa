@@ -25,7 +25,7 @@
         </div>
         <?php if(get_theme_mod('url_link_informasi')): ?>
         <a href="<?= get_theme_mod('url_link_informasi') ?>"
-            class="fs-responsive btn border-2 border-dark text-dark fw-semibold ms-auto"
+            class="fs-responsive btn border-2 border-dark text-dark fw-semibold ms-auto shadow-none"
             title="<?= esc_attr(get_theme_mod('label_link_informasi')) ?>">
             <?= get_theme_mod('label_link_informasi') ?>
         </a>

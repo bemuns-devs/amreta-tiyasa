@@ -40,6 +40,7 @@
                     <?php for($i = 1;$i <= get_theme_mod('jumlah_medsos'); $i++): ?>
                     <li>
                         <a href="<?= get_theme_mod('url_link_medsos_'.$i) ?>" class="text-white fs-4 fw-light me-3"
+                            target="_blank" rel="noopener noreferrer"
                             title="<?= ucfirst(esc_attr(get_theme_mod('nama_medsos_'.$i))) ?>">
                             <i class="fab fa-<?= esc_attr(get_theme_mod('nama_medsos_'.$i)) ?>"></i>
                         </a>

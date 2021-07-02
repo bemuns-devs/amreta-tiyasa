@@ -43,7 +43,7 @@ get_header();
 				<h1 class="fw-bold lh-base">
 					<?php the_title() ?>
 				</h1>
-				<p class="fs-responsive text-secondary">
+				<p class="small-responsive text-secondary">
 					<a href="<?= esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"
 						title="<?= esc_attr( get_the_author() ); ?>" class="text-secondary text-decoration-none">
 						<?= ucfirst(get_the_author()); ?>

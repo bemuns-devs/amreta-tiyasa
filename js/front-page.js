@@ -136,3 +136,12 @@ $(document).ready(function () {
     retina_detect: true,
   });
 });
+
+var $grid = $(".platform-wrap").imagesLoaded(function () {
+  // init Masonry after all images have loaded
+  $grid.masonry({
+    fitWidth: true,
+    gutter: 24,
+    horizontalOrder: true,
+  });
+});

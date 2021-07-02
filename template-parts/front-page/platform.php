@@ -9,22 +9,19 @@
                 <?= get_theme_mod('judul_platform') ?>
             </h2>
         </div>
-        <div class="col-xl-7 col-lg-8 col-11 mx-auto vh-100 overflow-scroll py-5 px-5 justify-content-end row"
-            data-masonry='{
-                "fitWidth:": true, 
-                "gutter": 24,
-                "horizontalOrder": true
-            }'>
-            <?php for($i=1;$i<= get_theme_mod('jumlah_platform') ;$i++): ?>
-            <div class="platform-item text-center mb-4">
-                <h3 class="fs-6"><?= get_theme_mod('nama_platform_'.$i) ?></h3>
-                <img src="<?= esc_url(get_theme_mod('logo_platform_'.$i)) ?>" class="platform-img my-3"
-                    alt="<?= esc_attr(get_theme_mod('nama_platform_'.$i)) ?>">
-                <p class="fw-light small-responsive mb-0">
-                    <?= get_theme_mod('deskripsi_platform_'.$i) ?>
-                </p>
+        <div class="col-xl-7 col-lg-8 col-md-11 mx-auto vh-100 overflow-scroll py-5 px-5 d-flex justify-content-center">
+            <div class="w-100 row platform-wrap">
+                <?php for($i=1;$i<= get_theme_mod('jumlah_platform') ;$i++): ?>
+                <div class="platform-item text-center mb-4">
+                    <h3 class="fs-6"><?= get_theme_mod('nama_platform_'.$i) ?></h3>
+                    <img src="<?= esc_url(get_theme_mod('logo_platform_'.$i)) ?>" class="platform-img my-3"
+                        alt="<?= esc_attr(get_theme_mod('nama_platform_'.$i)) ?>">
+                    <p class="fw-light small mb-0">
+                        <?= get_theme_mod('deskripsi_platform_'.$i) ?>
+                    </p>
+                </div>
+                <?php endfor; ?>
             </div>
-            <?php endfor; ?>
         </div>
     </div>
 </div>

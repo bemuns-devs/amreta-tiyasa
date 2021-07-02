@@ -17,7 +17,7 @@
         </small>
     </header>
     <a href="<?= esc_url(get_the_permalink()) ?>"
-        class="col-md-4 posts-thumbnail-wrapper p-md-0 ms-md-auto mb-md-0 mb-3 text-decoration-none order-md-2 order-1">
+        class="col-md-4 posts-thumbnail-wrapper p-0 ms-md-auto mb-md-0 mb-3 text-decoration-none order-md-2 order-1">
         <img src="<?= esc_url(the_post_thumbnail_url()) ?>" class="posts-thumbnail img-cover"
             alt="<?= esc_attr(the_title()) ?>" loading="lazy" title="<?= esc_attr(get_the_title()) ?>">
     </a>

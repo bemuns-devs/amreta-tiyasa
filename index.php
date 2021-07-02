@@ -24,9 +24,6 @@ get_header();
 				<?php 
 					if (is_home()) single_post_title();
 					if (is_search()) echo 'Cari';
-					if (is_category()) single_cat_title();
-					if (is_tag()) single_tag_title();
-					if (is_author()) the_author();
 					if (is_archive()) echo strip_tags(get_the_archive_title());
 				?>
 			</h1>
