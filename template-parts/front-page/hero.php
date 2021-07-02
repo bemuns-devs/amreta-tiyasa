@@ -1,5 +1,5 @@
 <?php if(get_theme_mod('judul_hero')): ?>
-<div id="hero" class="mb-5">
+<div id="hero">
     <div class="container py-5">
         <div class="row py-5">
             <header class="order-md-1 order-2 col-lg-6 col-md-7 m-auto text-md-start text-center">

@@ -9,8 +9,8 @@
                 <?= get_theme_mod('judul_platform') ?>
             </h2>
         </div>
-        <div class="col-xl-7 col-lg-8 col-md-11 mx-auto vh-100 overflow-scroll py-5 px-5 d-flex justify-content-center">
-            <div class="w-100 row platform-wrap">
+        <div class="col-xl-7 col-lg-8 col-md-11 vh-100 overflow-scroll py-5 px-5 d-flex justify-content-center">
+            <div class="col-sm-12 col-11 mx-auto row platform-wrap">
                 <?php for($i=1;$i<= get_theme_mod('jumlah_platform') ;$i++): ?>
                 <div class="platform-item text-center mb-4">
                     <h3 class="fs-6"><?= get_theme_mod('nama_platform_'.$i) ?></h3>
