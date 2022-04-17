@@ -14,7 +14,7 @@ Tema Wordpress BEM UNS 2021 Kabinet Amreta Tiyasa. Boilerplate by [Underscores (
   2. Navigate to `/wp-content/themes/` directory
   3. Clone this repository
      ```
-     git clone git@github.com:bemuns-devs/simpul-kebaikan.git
+     git clone git@github.com:bemuns-devs/amreta-tiyasa.git
      ```
   4. Have fun!
 
